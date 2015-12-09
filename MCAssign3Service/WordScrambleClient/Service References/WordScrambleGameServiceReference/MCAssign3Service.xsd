@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MCAssign3Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MCAssign3Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="GameAlreadyBeingHostedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="currentHost" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GameAlreadyBeingHostedException" nillable="true" type="tns:GameAlreadyBeingHostedException" />
+  <xs:complexType name="Word">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="scrambledWord" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="unscrambledWord" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Word" nillable="true" type="tns:Word" />
+  <xs:complexType name="HostCannotJoinGameException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HostCannotJoinGameException" nillable="true" type="tns:HostCannotJoinGameException" />
+  <xs:complexType name="GameNotBeingHostedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GameNotBeingHostedException" nillable="true" type="tns:GameNotBeingHostedException" />
+  <xs:complexType name="MaxmimumPlayersReachedException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="maxPlayers" type="xs:int" />
+      <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MaxmimumPlayersReachedException" nillable="true" type="tns:MaxmimumPlayersReachedException" />
+  <xs:complexType name="UserNotInGameException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserNotInGameException" nillable="true" type="tns:UserNotInGameException" />
+</xs:schema>

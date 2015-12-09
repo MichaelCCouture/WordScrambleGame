@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCAssign3Service", "MCAssign3Service\MCAssign3Service.csproj", "{93AF8D1E-2E17-4DF1-8306-9F30095D4CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordScrambleClient", "WordScrambleClient\WordScrambleClient.csproj", "{8F3CBF3D-00F3-4749-BC3A-E0EC085CF706}"
+	ProjectSection(ProjectDependencies) = postProject
+		{93AF8D1E-2E17-4DF1-8306-9F30095D4CD4} = {93AF8D1E-2E17-4DF1-8306-9F30095D4CD4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93AF8D1E-2E17-4DF1-8306-9F30095D4CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93AF8D1E-2E17-4DF1-8306-9F30095D4CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93AF8D1E-2E17-4DF1-8306-9F30095D4CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93AF8D1E-2E17-4DF1-8306-9F30095D4CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3CBF3D-00F3-4749-BC3A-E0EC085CF706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3CBF3D-00F3-4749-BC3A-E0EC085CF706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3CBF3D-00F3-4749-BC3A-E0EC085CF706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3CBF3D-00F3-4749-BC3A-E0EC085CF706}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
