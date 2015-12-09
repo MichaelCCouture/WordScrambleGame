@@ -16,31 +16,40 @@ namespace WordScrambleClient
             Console.WriteLine("Enter your name");
             String playerName = Console.ReadLine();
 
-            if (!proxy.isGameBeingHosted())
+            try
             {
-                Console.WriteLine("Welcome " + playerName + "! Do you want to host the game?");
-
-                if (Console.ReadLine().ToLower().CompareTo("yes") == 0)
+                if (!proxy.isGameBeingHosted())
                 {
-                    Console.WriteLine("Type the word to scramble.");
-                    string inputWord = Console.ReadLine();
+                    Console.WriteLine("Welcome " + playerName + "! Do you want to host the game?");
 
-                    //If the user wants to host, try to host a game
-                    try
+                    if (Console.ReadLine().ToLower().CompareTo("yes") == 0)
                     {
-                        string scrambledWord = proxy.hostGame(playerName, "", inputWord);
-                        canPlayGame = false;
-                        Console.WriteLine("You're hosting the game with word '" + inputWord + "' scrambled as '" + scrambledWord + "'");
-                        Console.ReadKey();
-                    }
-                    catch (FaultException<GameAlreadyBeingHostedException> e)
-                    {
-                        //If there is already a game being hosted by someone else, tell the user who is hosting the game
-                        Console.WriteLine("A game is already being hosted by: {0}", e.Detail.currentHost);
-                        Console.ReadLine();
-                        return;
+                        Console.WriteLine("Type the word to scramble.");
+                        string inputWord = Console.ReadLine();
+
+                        //If the user wants to host, try to host a game
+                        try
+                        {
+                            string scrambledWord = proxy.hostGame(playerName, "", inputWord);
+                            canPlayGame = false;
+                            Console.WriteLine("You're hosting the game with word '" + inputWord + "' scrambled as '" + scrambledWord + "'");
+                            Console.ReadKey();
+                        }
+                        catch (FaultException<GameAlreadyBeingHostedException> e)
+                        {
+                            //If there is already a game being hosted by someone else, tell the user who is hosting the game
+                            Console.WriteLine("A game is already being hosted by: {0}", e.Detail.currentHost);
+                            Console.ReadLine();
+                            return;
+                        }
                     }
                 }
+            }
+            catch
+            {
+                Console.WriteLine("Connection error. Are you running the host through Visual Studio?");
+                Console.ReadLine();
+                return;
             }
 
             if (canPlayGame)

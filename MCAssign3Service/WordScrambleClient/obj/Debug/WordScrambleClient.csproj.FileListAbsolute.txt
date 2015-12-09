@@ -25,4 +25,3 @@ C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\WordScrambleClient\ob
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\WordScrambleClient\obj\Debug\WordScrambleClient.pdb
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\WordScrambleClient\bin\Debug\WordScrambleClient.exe
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\WordScrambleClient\bin\Debug\WordScrambleClient.pdb
-C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\WordScrambleClient\obj\Debug\WordScrambleClient.csprojResolveAssemblyReference.cache

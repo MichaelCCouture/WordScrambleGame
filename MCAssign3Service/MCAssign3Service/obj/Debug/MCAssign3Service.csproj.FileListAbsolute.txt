@@ -21,6 +21,5 @@ C:\Users\mcouture-cc\Desktop\MCAssign3Service\MCAssign3Service\MCAssign3Service\
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\MCAssign3Service\bin\Debug\MCAssign3Service.dll.config
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\MCAssign3Service\bin\Debug\MCAssign3Service.dll
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\MCAssign3Service\bin\Debug\MCAssign3Service.pdb
-C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\MCAssign3Service\obj\Debug\MCAssign3Service.csprojResolveAssemblyReference.cache
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\MCAssign3Service\obj\Debug\MCAssign3Service.dll
 C:\Users\Michael\Desktop\WordScrambleGame\MCAssign3Service\MCAssign3Service\obj\Debug\MCAssign3Service.pdb
